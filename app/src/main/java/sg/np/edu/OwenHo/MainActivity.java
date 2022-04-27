@@ -22,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         TextView nameTV = findViewById(R.id.textView);
         TextView descTV = findViewById(R.id.textView2);
         Button followButton = findViewById(R.id.followBtn);
+
         nameTV.setText(user1.name);
         descTV.setText(user1.description);
         if(user1.followed){
             followButton.setText("Unfollow");
         }
+
         followButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
